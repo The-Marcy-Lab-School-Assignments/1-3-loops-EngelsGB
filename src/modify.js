@@ -1,8 +1,6 @@
 const whileToFor = () => {
-  let i = 0;
-  while (i < 5) {
+  for (let i = 0; i <5; i++) {
     console.log(i);
-    i++;
   }
 };
 
@@ -11,6 +9,8 @@ const continueGuardClause = () => {
     if (!(i === 2) && !(i === 3)) {
       console.log("Sure glad this isn't 2 or 3");
       console.log(i);
+    } else {
+      continue;
     }
   }
 };
